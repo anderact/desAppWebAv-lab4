@@ -27,7 +27,7 @@ io.on('connection', (socket) => {
     })
 })
 
-app.use(express.static('static'))
+app.use(express.static('public'))
 
 app.get('/', (req, resp) => {
     resp.sendFile(`${__dirname}/cliente/index.html`)
